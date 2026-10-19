@@ -1,0 +1,105 @@
+.home-content {
+    padding: 10px 20px;
+    min-height: calc(100vh - 60px);
+    background-color: #001329;
+}
+
+.weather-info {
+    max-width: 100%;
+    height: 350px;
+    background: url(/public/Home-img.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
+.home-grafic-content {
+    width: 100%;
+    max-width: 1920px;
+    height: 500px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+
+}
+
+.home-temperature-chart {
+    flex: 1;
+    min-width: 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #002042;
+    padding: 15px;
+}
+
+.home-weather-forecast {
+    flex: 1;
+    min-width: 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #002042;
+    padding: 15px;
+}
+
+.title-home-temperature {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+}
+
+.title-home-temperature svg {
+    width: 40px;
+    height: 50px;
+    color: rgb(27, 119, 184);
+}
+
+@media screen and (max-width: 1155px) {
+    .home-grafic-content {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .home-temperature-chart,
+    .home-weather-forecast {
+        flex: none;
+        width: 100%;
+        min-height: 500px;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    .home-temperature-chart {
+
+        min-height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 428px) {
+    .home-content {
+        padding: 5px 10px;
+        min-height: calc(100vh - 60px);
+        height: auto;
+        box-sizing: border-box;
+        background-color: #001329;
+    }
+
+    .weather-info {
+        height: 290px;
+    }
+
+    .title-home-temperature {
+        display: flex;
+        align-items: center;
+        font-size: 6px;
+    }
+
+    .title-home-temperature svg {
+        width: 30px;
+        height: 40px;
+        color: rgb(27, 119, 184);
+    }
+}

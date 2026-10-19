@@ -1,0 +1,242 @@
+.weather-content {
+    width: 900px;
+    max-width: 100%;
+    height: 350px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+    border-radius: 15px;
+    background: linear-gradient(to right,
+            #15182b 0%,
+            rgba(21, 24, 43, 0.7) 45%,
+            transparent 100%);
+    color: #ffffff;
+}
+
+
+
+/* Data e horário */
+.weather-date p {
+    margin: 0;
+    color: #c4c7d4;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* Cidade e localização */
+
+.weather-location {
+    margin-left: 10px;
+}
+
+.weather-current {
+    margin-left: 0px;
+}
+
+.weather-location span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-location svg {
+    width: 40px;
+    height: 50px;
+    color: rgb(1, 149, 255);
+}
+
+.weather-location span p {
+    margin: 10px;
+    color: #a5a9bd;
+    font-size: 14px;
+
+}
+
+.weather-location div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+    background-color: #648cb9;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+/* Temperatura e condição climática */
+.weather-current {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+
+.weather-icon-container img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.weather-temperature h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.weather-temperature h1 span {
+    color: rgb(27, 119, 184);
+    font-size: 48px;
+}
+
+.weather-temperature p {
+    margin: 5px 0 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 428px) {
+    .weather-content {
+        height: 290px;
+    }
+
+    /* Data e horário */
+    .weather-date p {
+        margin: 0;
+        color: #c4c7d4;
+        font-size: 10px;
+        text-transform: capitalize;
+    }
+
+    /* Cidade e localização */
+
+    .weather-location {
+        margin-left: 0px;
+    }
+
+    .weather-location span {
+
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    .weather-location svg {
+        width: 30px;
+        height: 40px;
+        color: rgb(1, 149, 255);
+    }
+
+    .weather-location span p {
+        margin: 10px;
+        color: #a5a9bd;
+        font-size: 12px;
+    }
+
+    .weather-location div {
+        font-size: 10px;
+    }
+
+
+
+    /* Temperatura e condição climática */
+
+
+    .weather-current {
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+
+    .weather-icon-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .weather-temperature h1 {
+        font-size: 38px;
+    }
+
+    .weather-temperature h1 span {
+        color: rgb(27, 119, 184);
+        font-size: 48px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .weather-content {
+        height: 290px;
+    }
+
+    /* Data e horário */
+    .weather-date p {
+        margin: 0;
+        color: #c4c7d4;
+        font-size: 10px;
+        text-transform: capitalize;
+    }
+
+    /* Cidade e localização */
+
+    .weather-location {
+        margin-left: 0px;
+    }
+
+    .weather-location span {
+
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    .weather-location svg {
+        width: 30px;
+        height: 40px;
+        color: rgb(1, 149, 255);
+    }
+
+    .weather-location span p {
+        margin: 10px;
+        color: #a5a9bd;
+        font-size: 12px;
+    }
+
+    .weather-location div {
+        font-size: 10px;
+    }
+
+
+
+    /* Temperatura e condição climática */
+    .weather-current {
+        margin-top: -15px;
+        margin-left: -10px;
+    }
+
+    .weather-icon-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .weather-temperature h1 {
+        font-size: 28px;
+
+    }
+
+    .weather-temperature h1 span {
+        color: rgb(27, 119, 184);
+        font-size: 38px;
+    }
+
+    .weather-temperature p {
+        margin: 5px 0 0;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+}
